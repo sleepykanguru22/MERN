@@ -1,12 +1,12 @@
-console.log(hello);
-var hello = "world";
+// var hello = "world";
+// console.log(hello);
 
-// var needle = "haystack";
-// test();
-// function test() {
-//   var needle = "magnet";
-//   console.log(needle);
-// }
+var needle = "haystack";
+function test() {
+  var needle = "magnet";
+  console.log(needle);
+}
+test();
 
 // var brendan = "super cool";
 // function print() {
