@@ -1,12 +1,12 @@
 // var hello = "world";
 // console.log(hello);
 
-var needle = "haystack";
-function test() {
-  var needle = "magnet";
-  console.log(needle);
-}
-test();
+// var needle = "haystack";
+// function test() {
+//   var needle = "magnet";
+//   console.log(needle);
+// }
+// test();
 
 // var brendan = "super cool";
 // function print() {
@@ -55,3 +55,12 @@ test();
 //   console.log(dojo);
 // }
 // console.log(dojo);
+
+// Predict Destructuring
+
+// problem 1 undefined
+// problem 2 undefined
+
+// problem 3 undefined
+// problem 4 undefined
+// problem 5 undefined
