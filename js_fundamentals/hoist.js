@@ -1,5 +1,6 @@
 // var hello = "world";
 // console.log(hello);
+//undefined
 
 // var needle = "haystack";
 // function test() {
@@ -7,6 +8,7 @@
 //   console.log(needle);
 // }
 // test();
+//needle is already defined
 
 // var brendan = "super cool";
 // function print() {
@@ -14,6 +16,7 @@
 //   console.log(brendan);
 // }
 // console.log(brendan);
+//brendan is already defined and doesn't call function
 
 // var food = "chicken";
 // console.log(food);
@@ -23,6 +26,9 @@
 //   console.log(food);
 //   var food = "gone";
 // }
+//food will print to console
+//then eat will run
+//does not print to terminal undefined
 
 // mean();
 // console.log(food);
