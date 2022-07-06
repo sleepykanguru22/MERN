@@ -17,7 +17,26 @@ class Ninja {
   }
 }
 
-const ninja1 = new Ninja("Hyabusa");
-ninja1.sayName();
-ninja1.drinkSake();
-ninja1.showStats();
+// const ninja1 = new Ninja("Hyabusa");
+// ninja1.sayName();
+// ninja1.drinkSake();
+// ninja1.showStats();
+
+class Sensei extends Ninja {
+  constructor(name) {
+    super(name);
+    this.health = 200;
+    this.speed = 10;
+    this.strength = 10;
+    this.wisdom = 10;
+  }
+
+  speakWisdom() {
+    super.drinkSake();
+    console.log("You should be coding");
+  }
+}
+
+superSensei = new Sensei("Jarjar");
+superSensei.speakWisdom();
+superSensei.showStats();
