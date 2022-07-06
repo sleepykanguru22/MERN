@@ -2,6 +2,13 @@ import "./App.css";
 import SomeClassComponent from "./components/SomeClassComponenet";
 import Header from "./components/Header";
 import Person from "./components/Person";
+
+var peopleArr = [
+  { firstName: "Jane", lastName: "Doe", age: 45, hairColor: "Black" },
+  { firstName: "John", lastName: "Smith", age: 88, hairColor: "Brown" },
+  { firstName: "Millard", lastName: "Fillmore", age: 50, hairColor: "Brown" },
+  { firstName: "Maria", lastName: "Smith", age: 62, hairColor: "Brown" }
+];
 function App() {
   return (
     <div className="App">
@@ -17,24 +24,16 @@ function App() {
         <SomeClassComponent someText={"This is our first class component."} />
         <Header firstName={"Jasmin"} lastName={"Carter"} />
         <div className="form-control">
-          <Person
-            firstName={"Jane"}
-            lastName={"Doe"}
-            age={45}
-            hairColor={"Black"}
-          />
-          <Person
-            firstName={"John"}
-            lastName={"Smith"}
-            age={88}
-            hairColor={"Brown"}
-          />
-          <Person
-            firstName={"Millard"}
-            lastName={"Fillmore"}
-            age={62}
-            hairColor={"Brown"}
-          />
+          {peopleArr.map((person) => {
+            return (
+              <Person
+                firstName={person.firstName}
+                lastName={person.lastName}
+                age={person.age}
+                hairColor={person.hairColor}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
