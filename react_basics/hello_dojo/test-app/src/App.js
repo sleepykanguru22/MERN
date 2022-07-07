@@ -2,6 +2,7 @@ import "./App.css";
 import SomeClassComponent from "./components/SomeClassComponenet";
 import Header from "./components/Header";
 import Person from "./components/Person";
+import PersonCard from "./components/PersonCard";
 
 var peopleArr = [
   { firstName: "Jane", lastName: "Doe", age: 45, hairColor: "Black" },
@@ -38,6 +39,18 @@ function App() {
         <button onClick={() => alert("This button has been clicked!")}>
           Click Me
         </button>
+        <div className="form-control my-5">
+          {peopleArr.map((person) => {
+            return (
+              <PersonCard
+                firstName={person.firstName}
+                lastName={person.lastName}
+                age={person.age}
+                hairColor={person.hairColor}
+              />
+            );
+          })}{" "}
+        </div>
       </div>
     </div>
   );

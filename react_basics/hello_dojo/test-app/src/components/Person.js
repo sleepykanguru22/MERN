@@ -29,7 +29,9 @@ class Person extends Component {
           {this.state.count}
         </p>
         <p>Hair Color: {hairColor}</p>
-        <button onClick={this.handleCountClick}>birthday</button>
+        <button className="btn btn-primary" onClick={this.handleCountClick}>
+          birthday
+        </button>
       </div>
     );
   }
