@@ -35,6 +35,9 @@ function App() {
             );
           })}
         </div>
+        <button onClick={() => alert("This button has been clicked!")}>
+          Click Me
+        </button>
       </div>
     </div>
   );
