@@ -3,6 +3,8 @@ import SomeClassComponent from "./components/SomeClassComponenet";
 import Header from "./components/Header";
 import Person from "./components/Person";
 import PersonCard from "./components/PersonCard";
+import UserForm from "./components/UserForm";
+import MoreForm from "./components/MoreForm";
 
 var peopleArr = [
   { firstName: "Jane", lastName: "Doe", age: 45, hairColor: "Black" },
@@ -51,6 +53,8 @@ function App() {
             );
           })}{" "}
         </div>
+        <UserForm />
+        <MoreForm />
       </div>
     </div>
   );
